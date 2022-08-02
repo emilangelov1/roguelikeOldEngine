@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/UI/Health/EmptyHealthHearts.png" type="Texture" id=1]
+
+[node name="EMPTYHEALTH" type="HBoxContainer" groups=["EMPTYHEALTH"]]
+anchor_right = 0.067
+anchor_bottom = 0.119
+margin_right = -0.639999
+margin_bottom = -0.520004
+rect_pivot_offset = Vector2( 62, 66 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 1 )

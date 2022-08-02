@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://PauseMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://SlowTimeBar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BossHealthBar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://HEALTHCONTAINER.gd" type="Script" id=4]
+[ext_resource path="res://GUI.gd" type="Script" id=5]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 5 )
+
+[node name="BossHealthBar" parent="." instance=ExtResource( 3 )]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.005
+anchor_top = 0.009
+anchor_right = 0.053
+anchor_bottom = 0.092
+margin_left = 0.4
+margin_top = 0.279999
+margin_right = 36.24
+margin_bottom = 38.64
+rect_scale = Vector2( 0.7, 0.7 )
+script = ExtResource( 4 )
+
+[node name="SlowTimeBar" parent="." instance=ExtResource( 2 )]
+
+[node name="PAUSE" parent="." instance=ExtResource( 1 )]
+visible = false
